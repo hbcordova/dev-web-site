@@ -4,6 +4,8 @@
     --primary: #454B6B;
     --secondary: #484F70;
     --card: #313131;
+    --info: #5bc0de;
+    --success: #5cb85c;
 }
 
 /* GLOBALS */
@@ -20,6 +22,12 @@ body {
     
     margin: 0;
     background-color: var(--secondary);
+}
+
+.container {
+    margin: 0 auto;
+    max-width: 1200px;
+    width: 95%;
 }
 
 /* NAGIGATION */
@@ -139,3 +147,88 @@ header {
     font-size: 24px;
 }
 
+
+/* PROJECTS SECTION */
+
+.projects {
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+.projects__title {
+    font-weight: bold;
+    color: white;
+    text-transform: uppercase;
+}
+
+.projects__container {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    padding-top: 10px;
+    gap: 20px;
+}
+
+@media(min-width: 700px) {
+    .projects__container {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+.project {
+    width: 350px;
+    background-color: white;
+    border-radius: 5px;
+    color: black;
+}
+
+.project__image img {
+    width: 350px;
+    height: 200px;
+}
+
+.project__content {
+    padding: 5px 10px 20px 10px;
+}
+
+.project__title {
+    font-weight: bolder;
+    margin-bottom: 2px;
+}
+
+.project__subtitle {
+    margin: 0;
+    font-weight: bold;
+}
+
+.project__actions {
+    display: flex;
+    column-gap: 10px;
+}
+
+.btn {
+    display: flex;
+    align-items: center;
+    height: 40px;
+    padding: 10px;
+    text-decoration: none;
+    color: white;
+    border-radius: 5px;
+}
+
+.btn-github {
+    background-color: var(--info);
+}
+
+.btn-deploy {
+    background-color: var(--success);
+}
+
+.btn__img {
+    padding-left: 5px;
+}
+
+/* FOOTER */
+.footer {
+    color: white;
+    text-align: center;
+}
