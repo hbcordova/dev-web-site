@@ -1,0 +1,141 @@
+
+/* PALETE COLORS */
+:root {
+    --primary: #454B6B;
+    --secondary: #484F70;
+    --card: #313131;
+}
+
+/* GLOBALS */
+
+*, *:after, *:before {
+    box-sizing: inherit;
+}
+
+html {
+    box-sizing: border-box;
+}
+
+body {
+    
+    margin: 0;
+    background-color: var(--secondary);
+}
+
+/* NAGIGATION */
+
+header {
+    background-color: var(--primary);
+}
+
+.menu {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.navigation {
+    display: none;
+}
+
+.logo {
+    text-decoration: none;
+}
+
+.logo:hover {
+    background-color: var(--secondary);
+}
+
+.title {
+    color: white;
+    margin: 0 0;
+    padding: 10px 20px;
+}
+
+.navigation__link {
+    text-decoration: none;
+    color: white;
+    margin-right: 10px;
+    font-size: 16px;
+    padding: 20px 20px;
+    width: 100%;
+    text-align: center;
+}
+
+.navigation__link:hover {
+    background-color: var(--secondary);
+}
+
+.social {
+    display: none;
+}
+
+.menu__toggle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60px;
+    width: 60px;
+    padding: 20px 20px;
+}
+
+.menu__toggle:hover {
+    background-color: var(--secondary);
+    cursor: pointer;
+}
+
+.navigation__mobile {
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.invisible {
+    display: none;
+}
+
+@media (min-width: 700px) {
+    .menu {
+        height: 60px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .navigation {
+        display: flex;
+    }
+    .social {
+        display: flex;
+        gap: 10px;
+        list-style: none;
+    }
+    .menu__toggle {
+        display: none;
+    }
+    .navigation__link {
+        width: auto;
+    }
+    .navigation__mobile {
+        display: none;
+    }
+}
+
+/* HERO */
+
+.hero {
+    height: 350px;
+    background-color: var(--card);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero__text {
+    color: white;
+    font-size: 24px;
+}
+
